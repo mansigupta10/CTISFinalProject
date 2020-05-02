@@ -1,0 +1,61 @@
+body {
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+}
+header {
+    background-color: #373737;
+    color: white;
+    margin: 0em;
+    padding: 15px;
+    text-align: center;
+}
+header.flexible {
+    display:flex; 
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: 
+}
+header.link, header.thelink {
+    color: white;
+    display: block;
+    border: 2px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin:.5em;
+    font-size: large;
+}
+a:link {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:visited {
+    color:#60EDD3;
+}
+a:hover, a:active{
+    color:rgb(0, 225, 255);
+    text-decoration: line-through;
+    text-decoration: none;
+}
+
+p#Gold, p#Silk, p#Paper, p#Charcoal, p#Rose {
+    text-shadow: .05em .05em .5em black;
+}
+
+p#Gold {
+    background-color: rgb(197, 182, 133);
+}
+p#Silk {
+    background-color: #DCD0C0;
+}
+p#Paper {
+    background-color: #F4F4F4;
+}
+p#Charcoal {
+    background-color: #373737;
+}
+p#Rose {
+    background-color: #FEDCD2;
+}
+
