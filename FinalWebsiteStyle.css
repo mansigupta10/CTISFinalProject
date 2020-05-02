@@ -1,0 +1,33 @@
+body {
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+}
+header {
+    background-color: #373737;
+    color: white;
+    margin: 0em;
+    padding: 15px;
+    text-align: center;
+}
+
+p#Gold, p#Silk, p#Paper, p#Charcoal, p#Rose {
+    text-shadow: .05em .05em .5em black;
+}
+
+p#Gold {
+    background-color: rgb(197, 182, 133);
+}
+p#Silk {
+    background-color: #DCD0C0;
+}
+p#Paper {
+    background-color: #F4F4F4;
+}
+p#Charcoal {
+    background-color: #373737;
+}
+p#Rose {
+    background-color: #FEDCD2;
+}
+
