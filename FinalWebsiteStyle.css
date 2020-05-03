@@ -2,7 +2,7 @@ body {
     font-size: 1.5em;
     color: #373737;
     font-family: "Dosis", sans-serif;
-    background: #F4F4F4;
+    background-image: url(images/marbling.jpg);
 }
 
 /* HEADER */
@@ -52,7 +52,7 @@ div.intro {
     margin: 2em 25% .5em 25%;
     text-align: center;
     border: 4px #FEDCD2 inset;
-    padding: 10px 35px 20px 0px;
+    padding: 10px 35px 5px 35px;
     background: white;
 }
 p.face {
