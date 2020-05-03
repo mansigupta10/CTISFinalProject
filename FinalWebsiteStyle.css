@@ -116,3 +116,7 @@ p strong {
     margin-bottom: 10px;
 }
 
+ul#essentials {
+    list-style-type: none;
+    margin-left: 0em;
+}
