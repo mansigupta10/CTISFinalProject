@@ -4,7 +4,9 @@ body {
     font-family: "Dosis", sans-serif;
     background-image: url(images/marbling.jpg);
 }
-
+h1 {
+    text-align: center;
+}
 /* HEADER */
 header {
     font-family: "Playfair Display", serif;
@@ -84,6 +86,17 @@ p#quiz a:link, a#quiz:visited, a#quiz:hover, a#quiz:active {
 p#biglink a:hover {
     background-color: rgb(216, 201, 181);
 }
+
+/* Contact */
+
+form {
+    background-color: white; 
+    padding: 20px;
+    margin: 0 20% 0 20%;
+    border: 4px #FEDCD2 inset;
+}
+
+
 
 /* FOOTER */
 footer.flexible2 {
