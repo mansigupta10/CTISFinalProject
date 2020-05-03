@@ -81,6 +81,7 @@ img#arrow {
 p#biglink a:link {
     font-family: "Playfair Display", serif;
     background-color: rgb(240, 203, 192);
+    border: 3px rgb(240, 203, 192) solid; 
     display: block;
     border-radius: 50px;
     padding: .5em 1em;
@@ -98,7 +99,7 @@ p#quiz a:link, a#quiz:visited, a#quiz:hover, a#quiz:active {
 }
 
 p#biglink a:hover {
-    background-color: rgb(216, 201, 181);
+    background-color: #FEDCD2;
 }
 
 /* Contact */
