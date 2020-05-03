@@ -7,6 +7,11 @@ body {
 h1 {
     text-align: center;
 }
+
+h2 {
+    margin-left: 1.3em;
+}
+
 /* HEADER */
 header {
     font-family: "Playfair Display", serif;
@@ -118,5 +123,4 @@ p strong {
 
 ul#essentials {
     list-style-type: none;
-    margin-left: 0em;
 }
