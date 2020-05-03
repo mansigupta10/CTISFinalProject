@@ -7,6 +7,17 @@ body {
 h1 {
     text-align: center;
 }
+
+h2 {
+    margin-left: 1.3em;
+}
+p.title{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+    line-height: 1em;
+}
+
 /* HEADER */
 header {
     font-family: "Playfair Display", serif;
@@ -18,8 +29,8 @@ header {
 }
 header.flexible {
     display:flex; 
+    flex-wrap: wrap;
     justify-content: center;
-    padding-top: 10px;
 }
 header.link, header.thelink {
     color: white;
@@ -33,7 +44,7 @@ header.link, header.thelink {
 header.thelink {
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.26);
-    box-shadow: .08em .08em .5em rgb(0, 0, 0)
+    box-shadow: .08em .08em .3em rgba(0, 0, 0, 0.705)
 }
 a:link {
     color:rgb(197, 182, 133);
@@ -50,10 +61,19 @@ a:hover, a:active{
 
 
 /* HOME */
+div#logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    
+}
+img#logos {
+    width: 200px;
+}
 div.intro {
     margin: 2em 25% .5em 25%;
     text-align: center;
-    border: 4px #FEDCD2 inset;
+    border: 4px #DCD0C0 inset;
     padding: 10px 35px 5px 35px;
     background: white;
 }
@@ -66,7 +86,8 @@ img#arrow {
 }
 p#biglink a:link {
     font-family: "Playfair Display", serif;
-    background-color: #DCD0C0;
+    background-color: rgb(240, 203, 192);
+    border: 3px rgb(240, 203, 192) solid; 
     display: block;
     border-radius: 50px;
     padding: .5em 1em;
@@ -84,18 +105,29 @@ p#quiz a:link, a#quiz:visited, a#quiz:hover, a#quiz:active {
 }
 
 p#biglink a:hover {
-    background-color: rgb(216, 201, 181);
+    background-color: #FEDCD2;
+}
+
+/* QUIZ */
+ol {
+    background-color: white;
+    margin: 0 20% 0 20%;
+    padding: 20px 0px 20px 55px;
+    border: 4px #DCD0C0 inset;
+}
+p.questions {
+    margin: 15px 20% 5px 20%;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 /* Contact */
-
 form {
     background-color: white; 
     padding: 20px;
     margin: 0 20% 0 20%;
     border: 4px #FEDCD2 inset;
 }
-
 
 
 /* FOOTER */
@@ -116,3 +148,6 @@ p strong {
     margin-bottom: 10px;
 }
 
+ul#essentials {
+    list-style-type: none;
+}
