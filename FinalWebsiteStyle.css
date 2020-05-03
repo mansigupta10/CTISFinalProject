@@ -23,8 +23,8 @@ header {
 }
 header.flexible {
     display:flex; 
+    flex-wrap: wrap;
     justify-content: center;
-    padding-top: 10px;
 }
 header.link, header.thelink {
     color: white;
@@ -38,7 +38,7 @@ header.link, header.thelink {
 header.thelink {
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.26);
-    box-shadow: .08em .08em .5em rgb(0, 0, 0)
+    box-shadow: .08em .08em .3em rgba(0, 0, 0, 0.705)
 }
 a:link {
     color:rgb(197, 182, 133);
@@ -55,10 +55,19 @@ a:hover, a:active{
 
 
 /* HOME */
+div#logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    
+}
+img#logos {
+    width: 200px;
+}
 div.intro {
     margin: 2em 25% .5em 25%;
     text-align: center;
-    border: 4px #FEDCD2 inset;
+    border: 4px #DCD0C0 inset;
     padding: 10px 35px 5px 35px;
     background: white;
 }
@@ -71,7 +80,7 @@ img#arrow {
 }
 p#biglink a:link {
     font-family: "Playfair Display", serif;
-    background-color: #DCD0C0;
+    background-color: rgb(240, 203, 192);
     display: block;
     border-radius: 50px;
     padding: .5em 1em;
