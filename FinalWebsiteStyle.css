@@ -32,7 +32,7 @@ header.flexible {
     flex-wrap: wrap;
     justify-content: center;
 }
-header.link, header.thelink {
+div.link, div.thelink {
     color: white;
     display: block;
     border: 2px solid;
@@ -41,7 +41,7 @@ header.link, header.thelink {
     margin:.5em;
     font-size: large;
 }
-header.thelink {
+div.thelink {
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.26);
     box-shadow: .08em .08em .3em rgba(0, 0, 0, 0.705)
@@ -153,6 +153,55 @@ ul#essentials {
 }
 
 /* ESSENTIALS */
+button#essentials {
+    color: rgba(197, 182, 133);
+    display: block;
+    border: 2px solid white;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin:.5em;
+    font-size: large;
+    background-color: transparent;
+    font-family: "Playfair Display", serif;
+}
+
+button#essentials:hover, button#essentials:focus {
+    background-color: rgba(255, 255, 255, 0.26);
+    box-shadow: .08em .08em .3em rgba(0, 0, 0, 0.705)
+}
+
+div.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+div.essentialspages {
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    background-color: #373737;
+    max-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+div.essentialspages a {
+    color: white;
+    text-decoration: none;
+    border-top: 1px white solid;
+    font-size: .35em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0 20px 0 20px;
+}
+
+div.essentialspages a:hover {
+    background-color: rgba(197, 182, 133);
+}
+.show {
+    display: flex;
+}
 
 p#essentialsdescription {
     text-align: center;
