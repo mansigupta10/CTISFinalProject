@@ -151,3 +151,15 @@ p strong {
 ul#essentials {
     list-style-type: none;
 }
+
+/* ESSENTIALS */
+
+p#essentialsdescription {
+    text-align: center;
+}
+
+a#HomeNext {
+    text-decoration: underline;
+    font-weight: bold;
+    color:  #373737;
+}
