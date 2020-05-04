@@ -11,12 +11,6 @@ h1 {
 h2 {
     margin-left: 1.3em;
 }
-p.title{
-    text-align: center;
-    font-family: "Playfair Display", serif;
-    font-size: 2em;
-    line-height: 1em;
-}
 
 /* HEADER */
 header {
@@ -114,11 +108,38 @@ ol {
     margin: 0 20% 0 20%;
     padding: 20px 0px 20px 55px;
     border: 4px #DCD0C0 inset;
+    list-style: none;
 }
 p.questions {
     margin: 15px 20% 5px 20%;
     text-align: center;
     font-size: 1.5em;
+}
+li#name {
+    text-align: center;
+    margin-top: 40px;
+    list-style: none;
+}
+input {
+    margin-right: 15px;
+}
+div.colors {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 30% 0 30%;
+    background-color: white;
+    border: 4px #DCD0C0 inset;
+    padding: 20px 0px 20px 10px;
+}
+button.submit {
+    float: center;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    background-color: white;
+    border: 4px #DCD0C0 inset;
+    padding: 10px 10px 10px 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
 }
 
 /* Contact */
