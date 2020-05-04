@@ -7,3 +7,4 @@ essentialsbutton.addEventListener("click", onButtonClick);
 function onButtonClick() {
     dropdown.style.display = "flex";
 }
+
