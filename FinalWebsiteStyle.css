@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dosis&family=Playfair+Display&display=swap');
+
 body {
     font-size: 1.5em;
     color: #373737;
@@ -10,21 +12,35 @@ h1 {
 
 h2 {
     margin-left: 1.3em;
+    
+}
+main {
+    margin: 0 10% 0 10%;
 }
 
 /* HEADER */
 header {
     font-family: "Playfair Display", serif;
     font-size: 1.8em;
-    background-color: #373737;
+    background-color: #303030;
     color: white;
     padding: 10px;
     text-align: center;
+}
+div.heading {
+    border: #272626 15px solid;
 }
 header.flexible {
     display:flex; 
     flex-wrap: wrap;
     justify-content: center;
+}
+p.motto {
+    margin: -10px 0 -15px 0;
+    padding: 0px;
+    size: 1em;
+    font-style: italic;
+    font-family: "Alex Brush", "Playfair Display", serif;
 }
 div.link, div.thelink {
     color: white;
@@ -58,7 +74,7 @@ a:hover, a:active{
 div#logo {
     position: absolute;
     top: 25px;
-    left: 25px;
+    left: 50px;
     
 }
 img#logos {
@@ -232,4 +248,52 @@ a#HomeNext {
     text-decoration: underline;
     font-weight: bold;
     color:  #373737;
+}
+
+/* ABOUT US */
+p#theteam {
+    background-color: white;
+    border: 6px #DCD0C0 inset;
+    padding: 25px;
+    text-align: center;
+    margin: 50px;
+    margin-bottom: -20px;
+}
+div.aboutus {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+div.creators {
+    float: left;
+    margin: -10px 15px 0px 15px;
+    width: 300px;
+    background-color: white;
+    margin-top: 50px;
+    padding: 10px;
+    padding-right: 25px;
+    border: 4px #DCD0C0 inset;
+}
+div.creators img {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: .5em;
+    width: 300px;
+}
+div.thenames p{
+    border-top: 2px solid;
+    border-left: 2px solid;
+    padding: 10px;
+    width: fit-content;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    text-align: center;
+    margin: 0px;
+    margin: 20px 0 0 20px;
+    font-size: 1.5em;
+}
+div.description {
+    text-align: center;
+    padding: 10px;
 }
