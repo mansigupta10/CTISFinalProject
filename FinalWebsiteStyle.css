@@ -202,3 +202,13 @@ div.essentialspages a:hover {
 .show {
     display: flex;
 }
+
+p#essentialsdescription {
+    text-align: center;
+}
+
+a#HomeNext {
+    text-decoration: underline;
+    font-weight: bold;
+    color:  #373737;
+}
