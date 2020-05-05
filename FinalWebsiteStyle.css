@@ -242,6 +242,10 @@ div.essentialspages a:hover {
 
 p#essentialsdescription {
     text-align: center;
+    background-color: white;
+    border: 4px #DCD0C0 inset;
+    margin: 50px 20% 50px 20%;
+    padding: 20px;
 }
 
 a#HomeNext {
@@ -292,6 +296,22 @@ a.Backbutton2 {
     margin-left: 12.65em;
     font-family: "Playfair Display", serif;
     width: fit-content;
+}
+
+li.item {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+    border-bottom: #FEDCD2 4px solid;
+    width: fit-content;
+    margin: 0px;
+    margin-top: 10px;
+}
+h2.category {
+    text-align: center;
+    font-family: "Alex Brush", "Playfair Display", serif;
+    font-size: 3em;
+    margin-left: 0px;
+    margin-bottom: -10px;
 }
 
 /* ABOUT US */
