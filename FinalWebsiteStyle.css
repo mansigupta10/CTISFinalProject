@@ -281,7 +281,7 @@ a.Nextbutton2 {
     width: fit-content;
 }
 
-a#Backbutton {
+a.Backbutton {
     color: rgba(197, 182, 133);
     background-color: #373737;;
     display: block;
