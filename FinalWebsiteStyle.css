@@ -250,6 +250,50 @@ a#HomeNext {
     color:  #373737;
 }
 
+a.Nextbutton {
+    color: rgba(197, 182, 133);
+    background-color: #373737;;
+    display: block;
+    border: white 2px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin:.5em;
+    font-size: large;
+    margin-left: 71em;
+    margin-right: 1.8em;
+    font-family: "Playfair Display", serif;
+}
+
+a.Nextbutton2 {
+    color: rgba(197, 182, 133);
+    background-color: #373737;;
+    display: block;
+    border: white 2px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin:.5em;
+    font-size: large;
+    margin-left: 60em;
+    margin-right: 12.65em;
+    font-family: "Playfair Display", serif;
+    margin-top: 0em;
+}
+
+a.Backbutton2 {
+    color: rgba(197, 182, 133);
+    background-color: #373737;;
+    display: block;
+    border: white 2px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin:.5em;
+    font-size: large;
+    margin-right: 60em;
+    margin-left: 12.65em;
+    font-family: "Playfair Display", serif;
+    margin-top: 2em;
+}
+
 /* ABOUT US */
 p#theteam {
     background-color: white;
