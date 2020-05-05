@@ -259,9 +259,9 @@ a.Nextbutton {
     padding: .5em 1em;
     margin:.5em;
     font-size: large;
-    margin-left: 71em;
-    margin-right: 1.8em;
+    margin-left: 36em;
     font-family: "Playfair Display", serif;
+    width: fit-content;
 }
 
 a.Nextbutton2 {
@@ -273,10 +273,10 @@ a.Nextbutton2 {
     padding: .5em 1em;
     margin:.5em;
     font-size: large;
-    margin-left: 60em;
-    margin-right: 12.65em;
+    margin-right: 60em;
+    margin-left: 12.65em;
     font-family: "Playfair Display", serif;
-    margin-top: 0em;
+    width: fit-content;
 }
 
 a.Backbutton2 {
@@ -291,7 +291,7 @@ a.Backbutton2 {
     margin-right: 60em;
     margin-left: 12.65em;
     font-family: "Playfair Display", serif;
-    margin-top: 2em;
+    width: fit-content;
 }
 
 /* ABOUT US */
