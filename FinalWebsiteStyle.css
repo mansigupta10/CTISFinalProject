@@ -259,7 +259,6 @@ a.Nextbutton {
     padding: .5em 1em;
     margin:.5em;
     font-size: large;
-    margin-left: 36em;
     font-family: "Playfair Display", serif;
     width: fit-content;
 }
@@ -273,8 +272,22 @@ a.Nextbutton2 {
     padding: .5em 1em;
     margin:.5em;
     font-size: large;
+    margin-left: 5em;
+    font-family: "Playfair Display", serif;
+    width: fit-content;
+}
+
+a#Backbutton {
+    color: rgba(197, 182, 133);
+    background-color: #373737;;
+    display: block;
+    border: white 2px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin:.5em;
+    font-size: large;
     margin-right: 60em;
-    margin-left: 12.65em;
+    margin-left: 1em;
     font-family: "Playfair Display", serif;
     width: fit-content;
 }
@@ -288,8 +301,7 @@ a.Backbutton2 {
     padding: .5em 1em;
     margin:.5em;
     font-size: large;
-    margin-right: 60em;
-    margin-left: 12.65em;
+    margin-left: 5em;
     font-family: "Playfair Display", serif;
     width: fit-content;
 }
