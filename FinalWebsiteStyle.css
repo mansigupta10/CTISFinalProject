@@ -185,7 +185,7 @@ p strong {
     margin-bottom: 10px;
 }
 
-ul#essentials {
+ul.essentials {
     list-style-type: none;
 }
 
@@ -418,3 +418,12 @@ div.budget#four {
 div.budget#five {
     background-color: rgb(255, 241, 241);
 }
+
+/*CHECKLIST*/
+table {
+    width: 100%;
+    table-layout: fixed;
+    
+}
+
+
