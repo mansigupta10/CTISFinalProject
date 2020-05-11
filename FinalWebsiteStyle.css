@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dosis&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Jost:wght@300&family=Playfair+Display&display=swap');
 
 body {
     font-size: 1.5em;
     color: #373737;
-    font-family: "Dosis", sans-serif;
-    background-image: url(images/marbling.jpg);
+    font-family: "Jost", sans-serif;
+    background-image: url(images/marble.jpg);
+}
+body#home {
+    background-image: url(images/plant3.png);
+    background-size: cover
 }
 h1 {
     text-align: center;
@@ -71,32 +75,47 @@ a:hover, a:active{
 
 
 /* HOME */
-div#logo {
+div.logo {
     position: absolute;
     top: 25px;
     left: 50px;
-    
 }
 img#logos {
     width: 200px;
 }
+div.logo#homelogo {
+    top: 25px;
+    left:100px;
+}
+div.logo#homelogo img {
+    width: 250px;
+}
 div.intro {
     margin: 2em 25% .5em 25%;
     text-align: center;
-    border: 4px #DCD0C0 inset;
     padding: 10px 35px 5px 35px;
-    background: white;
+    background: rgba(255, 255, 255, 0.24);
 }
-p.face {
+p#face {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 0px;
+}
+p#click {
     font-size: 30px;
     font-weight: bold;
+}
+div.homecontent {
+    float: right;
+    width: 1200px;
+    margin-right: -10vmax;
 }
 img#arrow {
     width: 50px;
 }
 p#biglink a:link {
     font-family: "Playfair Display", serif;
-    background-color: rgb(240, 203, 192);
+    background-color: rgb(238, 206, 206);
     border: 3px rgb(240, 203, 192) solid; 
     display: block;
     border-radius: 50px;
@@ -167,27 +186,7 @@ form {
 }
 
 
-/* FOOTER */
-footer.flexible2 {
-    clear: left;
-    display:flex;
-    background-color: #373737;  
-    text-align: center;
-    justify-content: center;
-    color: white;
-    font-size: small;
-    font-family: "Playfair Display", serif;
-    margin-top: 2em;
-}
 
-p strong {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-}
-
-ul#essentials {
-    list-style-type: none;
-}
 
 /* ESSENTIALS */
 button#essentials {
@@ -417,4 +416,66 @@ div.budget#four {
 }
 div.budget#five {
     background-color: rgb(255, 241, 241);
+}
+
+/* FOOTER */
+footer.flexible2 {
+    clear: right;
+    display:flex;
+    background-color: #373737;  
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: small;
+    font-family: "Playfair Display", serif;
+    margin-top: 2em;
+    padding: 1em 0;
+}
+div strong {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+ul#essentials {
+    list-style-type: none;
+}
+div.smallfooter {
+    display: none;
+}
+img#smalllogos {
+    width: 100px;
+    margin-bottom: -15px;
+}
+
+@media (max-width: 1800px) {
+    main{
+        margin: 0px;
+    } 
+}
+@media (max-width: 1500px) {
+    div.intro {
+        background: rgba(255, 255, 255, 0.918);
+    }
+    div.logo#homelogo {
+        top: 50px;
+        left:50px;
+    }
+    div.logo#homelogo img {
+        width: 200px;
+    }
+}
+@media (max-width: 1300px) {
+div.smallfooter {
+    display: block;
+    }
+div.logo, div.largefooter {
+    display: none;
+    }
+}
+@media (min-height: 1300px) {
+    footer.flexible2#shortscreen {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+    }
 }
