@@ -21,6 +21,12 @@ h2 {
 main {
     margin: 0 10% 0 10%;
 }
+img {
+    width: 200px;
+}
+img.colors {
+    height: 150px;
+}
 
 /* HEADER */
 header {
