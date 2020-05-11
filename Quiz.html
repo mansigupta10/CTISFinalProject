@@ -11,6 +11,7 @@
 <body>
     <header>
         <header>Dorm Room Survey</header>
+        <p class="motto">Desire. Design. Dream.</p>
     </header>
 
     <header class="flexible">
@@ -49,7 +50,7 @@
     </ol>
 
     <p class="questions">Choose a color scheme.</p>
-    <ol>
+    <ol class="quizflex">
         <li><input type="radio" name="color" value="answer1" onclick="checkAnswer('1')"><img img class="colors" id="warmcolors" src="images/warm.png" alt="warm color scheme"></li>
         <li><input type="radio" name="color" value="answer2" onclick="checkAnswer('2')"><img img class="colors" id="coolcolors" src="images/cool.png" alt="cool color scheme"></li>
         <li><input type="radio" name="color" value="answer3" onclick="checkAnswer('3')"><img img class="colors" id="neutralcolors" src="images/neutral.png" alt="neutral color scheme"></li>
@@ -57,7 +58,7 @@
     </ol>
 
     <p class="questions">Choose some bedding.</p>
-    <ol>
+    <ol class="quizflex" id="bedding">
         <li><input type="radio" name="bed" value="answer1" onclick="checkAnswer('1')"><img img id="fluffybedding" src="images/fluffybedding.jpg" alt="gray bedding with many pillows"></li>
         <li><input type="radio" name="bed" value="answer2" onclick="checkAnswer('2')"><img img id="graybedding" src="images/luxebedding.jpg" alt="luxurious, white bedding"></li>
         <li><input type="radio" name="bed" value="answer3" onclick="checkAnswer('3')"><img img id="patternedbedding" src="images/patternedbedding.jpg" alt="patterned bedding"></li>
@@ -65,7 +66,7 @@
     </ol>
 
     <p class="questions">Choose a desk.</p>
-    <ol>
+    <ol class="quizflex" id="desk">
         <li><input type="radio" name="desk" value="answer1" onclick="checkAnswer('1')"><img img id="neatdesk" src="images/minimalistdesk.jpg" alt="neat, organized, white desk"></li>
         <li><input type="radio" name="desk" value="answer2" onclick="checkAnswer('2')"><img img id="photodesk" src="images/workdesk.jpg" alt="desk with photos taped to the sides"></li>
         <li><input type="radio" name="desk" value="answer3" onclick="checkAnswer('3')"><img img id="industrialdesk" src="images/personalizeddesk.jpg" alt="desk with large desktop computer and industrial light"></li>
@@ -73,7 +74,7 @@
     </ol>
 
     <p class="questions">Choose some wall decor.</p>
-    <ol>
+    <ol class="quizflex" id="wall">
         <li><input type="radio" name="wall" value="answer1" onclick="checkAnswer('1')"><img img id="mapdecor" src="images/mapdecor.jpg" alt="white wall with a world map, pictures, pennants, and lights hanging"></li>
         <li><input type="radio" name="wall" value="answer2" onclick="checkAnswer('2')"><img img id="quotesdecor" src="images/quotesdecor.jpg" alt="white wall with a collage of quotes"></li>
         <li><input type="radio" name="wall" value="answer3" onclick="checkAnswer('3')"><img img id="neutraldecor" src="images/neutraldecor.jpg" alt="white wall with a single travel poster"></li>
@@ -81,7 +82,7 @@
     </ol>
 
     <p class="questions">Choose a vibe.</p>
-    <ol>
+    <ol class="quizflex" id="vibe">
         <li><input type="radio" name="style" value="answer1" onclick="checkAnswer('1')"><img img id="clean" src="images/cleanvibes.jpg" alt="a simple bedside table with clock"></li>
         <li><input type="radio" name="style" value="answer2" onclick="checkAnswer('2')"><img img id="plants" src="images/plantvibes.jpg" alt="many plants surrounding a bookshelf"></li>
         <li><input type="radio" name="style" value="answer3" onclick="checkAnswer('3')"><img img id="accentcolor" src="images/accentcolorvibes.jpg" alt="bright pink wall and black furniture"></li>
@@ -89,7 +90,7 @@
     </ol>
 
     <p class="questions">Choose a rug.</p>
-    <ol>
+    <ol class="quizflex" id="rug">
         <li><input type="radio" name="rug" value="answer1" onclick="checkAnswer('1')"><img img id="bluerug" src="images/warmrug.jpg" alt="a blue and tan woven rug"></li>
         <li><input type="radio" name="rug" value="answer2" onclick="checkAnswer('2')"><img img id="whiterug" src="images/whiterug.jpg" alt="a fluffy white rug"></li>
         <li><input type="radio" name="rug" value="answer3" onclick="checkAnswer('3')"><img img id="grayrug" src="images/grayrug.jpg" alt="light gray rug with white pattern"></li>
@@ -130,7 +131,7 @@
     </div>
 
 
-    <button class="submit">Submit!</button>
+    <div id="submitbutton"><button class="submit">Submit!</button></div>
 
     <footer class="flexible2">
         <p>

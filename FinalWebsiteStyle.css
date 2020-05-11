@@ -156,6 +156,9 @@ p.questions {
     text-align: center;
     font-size: 1.5em;
 }
+li {
+    margin-right: 20px;
+}
 li#name {
     text-align: center;
     margin-top: 40px;
@@ -173,14 +176,42 @@ div.colors {
     padding: 20px 0px 20px 10px;
 }
 button.submit {
-    float: center;
-    text-align: center;
     margin: 20px 0 20px 0;
     background-color: white;
     border: 4px #DCD0C0 inset;
     padding: 10px 10px 10px 10px;
     font-family: "Playfair Display", serif;
     font-size: 2em;
+    border-radius: 5px;
+}
+div#submitbutton {
+    display: flex;
+    justify-content: space-around;
+}
+
+ol.quizflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+ol.quizflex img{
+    padding: 15px;
+    padding-right: 60px;
+}
+ol.quizflex#bedding img{
+    height: 250px;
+}
+ol.quizflex#desk img{
+    height: 270px;
+}
+ol.quizflex#wall img{
+    height: 240px;
+}
+ol.quizflex#vibe img{
+    height: 300px;
+}
+ol.quizflex#rug img{
+    height: 250px;
 }
 
 /* Contact */
