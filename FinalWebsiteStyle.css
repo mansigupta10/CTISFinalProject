@@ -145,7 +145,7 @@ p#biglink a:hover {
 
 /* QUIZ */
 ol {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.699);
     margin: 0 20% 0 20%;
     padding: 20px 0px 20px 55px;
     border: 4px #DCD0C0 inset;
@@ -473,11 +473,18 @@ img#smalllogos {
     }
 }
 @media (max-width: 1300px) {
-div.smallfooter {
+    div.smallfooter {
     display: block;
     }
-div.logo, div.largefooter {
+    div.logo, div.largefooter {
     display: none;
+    }
+    div.homecontent{
+        float: none;
+        border: 2px black solid;
+        margin: 0px;
+        width: fit-content;
+        padding: 0px;
     }
 }
 @media (min-height: 1300px) {
