@@ -422,8 +422,7 @@ div.budget#five {
 /*CHECKLIST*/
 table {
     width: 100%;
-    table-layout: fixed;
-    
+    table-layout: fixed; 
 }
 
 
