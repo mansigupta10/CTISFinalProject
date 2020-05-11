@@ -485,8 +485,7 @@ div.logo, div.largefooter {
 /*CHECKLIST*/
 table {
     width: 100%;
-    table-layout: fixed;
-    
+    table-layout: fixed; 
 }
 
 
