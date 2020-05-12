@@ -377,12 +377,11 @@ p#theteam {
     border: 6px #DCD0C0 inset;
     padding: 25px;
     text-align: center;
-    margin: 50px;
     margin-bottom: -20px;
 }
 div.aboutus {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 div.creators {
@@ -492,6 +491,29 @@ img#smalllogos {
     margin-bottom: -15px;
 }
 
+/* BROWSE */
+div.rowrooms, div.rowdesks, div.rowclosets {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.863);
+    border: 4px #DCD0C0 inset;
+}
+div.column {
+    flex: 23%;
+    max-width: 23%;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+main.browse {
+    margin: 0 10%;
+}
+
+/* MEDIA QUERIES */
 @media (min-width: 2200px){
     main {
         margin: 0 25%;
@@ -530,7 +552,6 @@ img#smalllogos {
     }
     div.homecontent{
         float: none;
-        border: 2px black solid;
         margin: 0px;
         width: fit-content;
         padding: 0px;
@@ -545,5 +566,18 @@ img#smalllogos {
     }
 }
 
+@media (max-width: 800px) {
+    div.column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    div.column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 
 
