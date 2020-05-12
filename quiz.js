@@ -1,5 +1,25 @@
 /*answer choices numbered in 2 digits, first digit is question number, second digit is answer choice*/
     /*question 1*/
+   namebox=document.getElementById("namebox")
+   firstquestion=document.getElementById("11")
+   function nameboxfunction() {
+       console.log(namebox.value);
+       document.write("<h1>");
+       document.write(namebox.value);
+       document.write("</h1>");
+       if (document.getElementById("11").checked=true) {
+        document.getElementById("disp").innerHTML = "radio button checked" ;
+       document.write("<h2>");
+       document.write("correct response");
+       document.write("</h2>");
+       }
+       if (document.getElementById("12").checked=true) {
+        document.write("<h2>");
+        document.write("other reponse");
+        document.write("</h2>");
+        }
+   } 
+
     const choice11 = document.getElementById("11");
     const choice12 = document.getElementById("12");
     const choice13 = document.getElementById("13");

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Quiz Page</title>
     <link rel="stylesheet" href="FinalWebsiteStyle.css">
-    <script src="FinalWebsiteJS.js" defer></script>
+    <script src="quiz.js" defer></script>
 </head>
 
 <body>
@@ -38,12 +38,14 @@
         <div class="link"><a href="Aboutus.html">About Us</a></div>
     </div>
 </header>
+<form onsubmit="return nameboxfunction()" action="return null;">
     <main>  
-    <li id="name"><label>Name: <input type="text" name="name" maxlength="50"></label></li>
+        <div id="disp" ></div>
+  <p><label>Name: <input type="text" id="namebox" name="namebox" maxlength="50"></label></p>
 
     <p class="questions">Are you living with a roommate?</p>
     <ol>
-        <li><input type="radio" id="11" name="number" value="answer1" onclick="checkAnswer('1')">No.</li>
+        <li><input type="radio" id="11" name="number" value="answer1">No.</li>
         <li><input type="radio" id="12" name="number" value="answer2" onclick="checkAnswer('2')">Yes, there will be two of us in the room.</li>
         <li><input type="radio" id="13" name="number" value="answer3" onclick="checkAnswer('3')">Yes, there will be three or more of us in the room.</li>
     </ol>
@@ -130,8 +132,10 @@
     </div>
 
 
-    <div id="submitbutton"><button class="submit">Submit!</button></div>
+    <p><input type="submit"></p>
+    <!--<div id="submitbutton"><button class="submit">Submit!</button></div>-->
     </main>
+</form>
     <footer class="flexible2">
         <p>
             <strong>R.E.M. Sleep & Co</strong>
