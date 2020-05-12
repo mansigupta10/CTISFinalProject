@@ -5,25 +5,20 @@
     <meta charset="utf-8">
     <title>Checklist</title>
     <link rel="stylesheet" href="FinalWebsiteStyle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
     <script src="FinalWebsiteJS.js" defer></script>
 </head>
 
 <body>
     <header>
-        <header>Dorm Room Checklist</header>
-    </header>
-    <header class="flexible">
-        <div id="logo"><img id="logos" src="images/logo.png"></div>
+        <div class="headertext">Dorm Room Essentials</div>
+        <p class="motto">Desire. Design. Dream.</p>
+    <div class="flexible">
+        <div class="logo"><img id="logos" src="images/logo.png"></div>
         <div class="link"><a href="HomePage.html">Home</a></div>
         <div class="link"><a href="Quiz.html">Quiz</a></div>
         <div class="link"><a href="Browse.html">Browse</a></div>
         <div class="dropdown" class="thelink">
-            <button id="essentials">Essentials</button>
+            <button class="thelink" id="essentials">Essentials</button>
             <div id=dropDownMenu class="essentialspages">
                 <a href="Essentials.html">Essentials</a>
                 <a href="Comfy.html">Bedding</a>
@@ -41,9 +36,11 @@
         <div class="link"><a href="Budget.html">Budget</a></div>
         <div class="link"><a href="Contact.html">Contact</a></div>
         <div class="link"><a href="Aboutus.html">About Us</a></div>
-    </header>
-
-    <span><h2>DORM ROOM ESSENTIALS CHECKLIST</h2></span>
+    </div>
+</header>
+    <main>  
+    <span><h2 class="category">Essentials Checklist</h2></span>
+    
     <table class="essentials">
         <tr>
             <th colspan="3"></th>
@@ -94,11 +91,13 @@
             </td>
         </tr>
     </table>
-    <p><a class="Backbutton" href="PrintableEssentialsList.pdf" download>Printable Dorm Essentials List</a>
+    <p><div id="checklist"><a class="printable" href="PrintableEssentialsList.pdf" download>Printable Dorm Essentials List</a></div>
+        <div class="backnext">
         <a class="Backbutton" href="Backpack.html">Back</a></header>
         <a class="Backbutton" href="Essentials.html">Back to Home</a></header>
+        </div>
     </p>
-
+    </main>
     <footer class="flexible2">
         <p>
             <strong>R.E.M. Sleep & Co</strong>

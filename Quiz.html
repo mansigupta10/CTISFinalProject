@@ -10,16 +10,14 @@
 
 <body>
     <header>
-        <header>Dorm Room Survey</header>
+        <div class="headertext">Dorm Room Survey</div>
         <p class="motto">Desire. Design. Dream.</p>
-    </header>
-
-    <header class="flexible">
+    <div class="flexible">
         <div class="logo"><img id="logos" src="images/logo.png"></div>
         <div class="link"><a href="HomePage.html">Home</a></div>
         <div class="thelink"><a href="Quiz.html">Quiz</a></div>
         <div class="link"><a href="Browse.html">Browse</a></div>
-        <div class="dropdown" class="thelink">
+        <div class="dropdown">
             <button id="essentials">Essentials</button>
             <div id=dropDownMenu class="essentialspages">
                 <a href="Essentials.html">Essentials</a>
@@ -38,8 +36,9 @@
         <div class="link"><a href="Budget.html">Budget</a></div>
         <div class="link"><a href="Contact.html">Contact</a></div>
         <div class="link"><a href="Aboutus.html">About Us</a></div>
-    </header>
-
+    </div>
+</header>
+    <main>  
     <li id="name"><label>Name: <input type="text" name="name" maxlength="50"></label></li>
 
     <p class="questions">Are you living with a roommate?</p>
@@ -126,13 +125,13 @@
 
     <p class="questions">Select two of your college/favorite colors.</p>
     <div class="colors">
-        <label>First Color: <input type="color" name="college"></label>
-        <br><label>Second Color: <input type="color" name="college"></label>
+        <div id="firstcolor"><label>First Color: <input type="color" name="college" class="colorselector"></label> </div>
+        <div id="secondcolor"><label>Second Color: <input type="color" name="college" class="colorselector"></label></div>
     </div>
 
 
     <div id="submitbutton"><button class="submit">Submit!</button></div>
-
+    </main>
     <footer class="flexible2">
         <p>
             <strong>R.E.M. Sleep & Co</strong>
