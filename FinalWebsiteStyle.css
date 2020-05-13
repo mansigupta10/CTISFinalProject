@@ -266,9 +266,10 @@ div.essentialspages {
     position: absolute;
     background-color: #373737;
     max-width: 140px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    margin-bottom: -30px;
 }
+
 div.essentialspages a {
     color: white;
     text-decoration: none;
@@ -276,12 +277,35 @@ div.essentialspages a {
     font-size: .35em;
     padding-top: 8px;
     padding-bottom: 8px;
-    margin: 0 20px 0 20px;
+    margin: -30px 20px -30px 20px;
 }
 
-div.essentialspages a:hover {
+div.essentialspages a:hover{
     background-color: rgba(197, 182, 133);
 }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .essentialspages {
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    background-color: #373737;
+    max-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.essentialspages a {
+    color: white;
+    text-decoration: none;
+    border-top: 1px white solid;
+    font-size: .35em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 .show {
     display: flex;
 }
