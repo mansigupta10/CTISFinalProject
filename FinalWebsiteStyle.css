@@ -284,9 +284,9 @@ div.essentialspages a:hover{
     background-color: rgba(197, 182, 133);
 }
 
-/*.dropdown:hover .essentialspages {
-    display: block;
-}*/
+.dropdown:hover .essentialspages {
+    display: flex;
+}
 
 .show {
     display: flex;
