@@ -6,6 +6,7 @@
     <title>Quiz Page</title>
     <link rel="stylesheet" href="FinalWebsiteStyle.css">
     <script src="quiz.js" defer></script>
+    <script src="FinalWebsiteJS.js" defer></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             <div class="thelink"><a href="Quiz.html">Quiz</a></div>
             <div class="link"><a href="Browse.html">Browse</a></div>
             <div class="dropdown">
-                <button id="essentials">Essentials</button>
+                <button class="thelink" id="essentials">Essentials</button>
                 <div id=dropDownMenu class="essentialspages">
                     <a href="Essentials.html">Essentials</a>
                     <a href="Comfy.html">Bedding</a>
@@ -163,15 +164,6 @@
                 <li><input type="radio" id="spirit4" name="spirit" value="answer4" onclick="checkAnswer('4')">I love it and
                     want to go all out.</li>
             </ol>
-
-            <p class="questions">Select two of your college/favorite colors.</p>
-            <div class="colors">
-                <div id="firstcolor"><label>First Color: <input type="color" name="college"
-                            class="colorselector"></label> </div>
-                <div id="secondcolor"><label>Second Color: <input type="color" name="college"
-                            class="colorselector"></label></div>
-            </div>
-
 
             <div id="submitbutton"><button id="thebutton" class="submit">Submit!</button></div>
 
@@ -416,7 +408,7 @@
         </div>
 
         <div class="theresults" id="othernotes">
-            Other notes from the Creators:
+            <h2 class="category">Other notes from the Creators:</h2>
         </div>
         <div class="theresults" id="if1">
             You love color and are proud of your school! While you don’t have to overwhelm your room with school spirit, 
