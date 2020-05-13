@@ -160,7 +160,7 @@ p.questions {
 li {
     margin-right: 20px;
 }
-li#name {
+li#namebox {
     text-align: center;
     margin-top: 40px;
     list-style: none;
@@ -266,9 +266,10 @@ div.essentialspages {
     position: absolute;
     background-color: #373737;
     max-width: 140px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    margin-bottom: -30px;
 }
+
 div.essentialspages a {
     color: white;
     text-decoration: none;
@@ -276,12 +277,17 @@ div.essentialspages a {
     font-size: .35em;
     padding-top: 8px;
     padding-bottom: 8px;
-    margin: 0 20px 0 20px;
+    margin: 0px 20px 0px 20px;
 }
 
-div.essentialspages a:hover {
+div.essentialspages a:hover{
     background-color: rgba(197, 182, 133);
 }
+
+.dropdown:hover .essentialspages {
+    display: flex;
+}
+
 .show {
     display: flex;
 }
@@ -549,6 +555,20 @@ div#hoverinfo {
         width: 200px;
     }
 }
+@media (max-width: 1300px) {
+    div.smallfooter {
+    display: block;
+    }
+    div.logo, div.largefooter {
+    display: none;
+    }
+    div.homecontent{
+        float: none;
+        margin: 0px;
+        width: fit-content;
+        padding: 0px;
+    }
+}
 @media (min-height: 1300px) {
     footer.flexible2#shortscreen {
         position: absolute;
@@ -558,23 +578,6 @@ div#hoverinfo {
     }
 }
 
-@media (max-width: 1300px) {
-    div.smallfooter {
-        display: block;
-    }
-    div.logo, div.largefooter {
-        display: none;
-    }
-    div.homecontent{
-        float: none;
-        margin: 0px;
-        width: fit-content;
-        padding: 0px;
-    }
-    footer.flexible2#shortscreen {
-        position: static;
-    }
-}
 @media (max-width: 800px) {
     div.column {
         flex: 50%;
@@ -590,13 +593,11 @@ div#hoverinfo {
 }
 
 
-
 div.theresults {
     display: none;
-    margin: 0 15%;
-    text-align: center;
 }
-div#results {
+div.results {
+    margin: 0 10%;
     background: rgba(255, 255, 255, 0.863);
     border: 4px #DCD0C0 inset;
     margin-top: 50px;
@@ -662,3 +663,4 @@ div.popup {
       left: 440px;
       transform: rotate(180deg);
   }
+}
