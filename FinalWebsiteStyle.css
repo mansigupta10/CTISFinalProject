@@ -160,7 +160,7 @@ p.questions {
 li {
     margin-right: 20px;
 }
-li#name {
+li#namebox {
     text-align: center;
     margin-top: 40px;
     list-style: none;
@@ -583,4 +583,9 @@ main.browse {
 
 div.theresults {
     display: none;
+}
+div.results {
+    margin: 0 10%;
+    background: rgba(255, 255, 255, 0.863);
+    border: 4px #DCD0C0 inset;
 }

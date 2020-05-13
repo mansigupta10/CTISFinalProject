@@ -3,7 +3,7 @@ thename = document.getElementById("thename");
 theform = document.getElementById("theform");
 results = document.getElementById("results");
 theintro = document.getElementById("theintro");
-
+results = document.getElementById("results");
 
 thebutton = document.getElementById("thebutton");
 room1 = document.getElementById("room1");
@@ -57,14 +57,16 @@ if9 = document.getElementById("if9");
 if10 = document.getElementById("if10");
 if11 = document.getElementById("if11");
 
+
 thebutton.addEventListener("click", onButtonClick);
 
 function onButtonClick() {
     theform.style.display = "none";
+    results.style.display = "block";
 
     thename.innerHTML = "Hello, " + namebox.value;
     theintro.style.display = "block";
-
+    
     if(document.getElementById("roommate1").checked) {
         room1.style.display = "block";
     }
