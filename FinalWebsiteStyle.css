@@ -581,3 +581,6 @@ main.browse {
 }
 
 
+div.theresults {
+    display: none;
+}

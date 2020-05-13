@@ -12,130 +12,459 @@
     <header>
         <div class="headertext">Dorm Room Survey</div>
         <p class="motto">Desire. Design. Dream.</p>
-    <div class="flexible">
-        <div class="logo"><img id="logos" src="images/logo.png"></div>
-        <div class="link"><a href="HomePage.html">Home</a></div>
-        <div class="thelink"><a href="Quiz.html">Quiz</a></div>
-        <div class="link"><a href="Browse.html">Browse</a></div>
-        <div class="dropdown">
-            <button id="essentials">Essentials</button>
-            <div id=dropDownMenu class="essentialspages">
-                <a href="Essentials.html">Essentials</a>
-                <a href="Comfy.html">Bedding</a>
-                <a href="Food.html">Food</a>
-                <a href="Clothes.html">Clothing</a>
-                <a href="Cleanliness.html">Bath</a>
-                <a href="Organization.html">Organizational</a>
-                <a href="Practical.html">Practical</a>
-                <a href="Homey.html">Decorative</a>
-                <a href="Entertainment.html">Entertainment</a>
-                <a href="Backpack.html">Backpack</a>
-                <a href="Checklist.html">Checklist</a>
+        <div class="flexible">
+            <div class="logo"><img id="logos" src="images/logo.png"></div>
+            <div class="link"><a href="HomePage.html">Home</a></div>
+            <div class="thelink"><a href="Quiz.html">Quiz</a></div>
+            <div class="link"><a href="Browse.html">Browse</a></div>
+            <div class="dropdown">
+                <button id="essentials">Essentials</button>
+                <div id=dropDownMenu class="essentialspages">
+                    <a href="Essentials.html">Essentials</a>
+                    <a href="Comfy.html">Bedding</a>
+                    <a href="Food.html">Food</a>
+                    <a href="Clothes.html">Clothing</a>
+                    <a href="Cleanliness.html">Bath</a>
+                    <a href="Organization.html">Organizational</a>
+                    <a href="Practical.html">Practical</a>
+                    <a href="Homey.html">Decorative</a>
+                    <a href="Entertainment.html">Entertainment</a>
+                    <a href="Backpack.html">Backpack</a>
+                    <a href="Checklist.html">Checklist</a>
+                </div>
             </div>
+            <div class="link"><a href="Budget.html">Budget</a></div>
+            <div class="link"><a href="Contact.html">Contact</a></div>
+            <div class="link"><a href="Aboutus.html">About Us</a></div>
         </div>
-        <div class="link"><a href="Budget.html">Budget</a></div>
-        <div class="link"><a href="Contact.html">Contact</a></div>
-        <div class="link"><a href="Aboutus.html">About Us</a></div>
-    </div>
-</header>
-<form onsubmit="return nameboxfunction()" action="return null;">
-    <main>  
-        <div id="disp" ></div>
-  <p><label>Name: <input type="text" id="namebox" name="namebox" maxlength="50"></label></p>
-
-    <p class="questions">Are you living with a roommate?</p>
-    <ol>
-        <li><input type="radio" id="11" name="number" value="answer1">No.</li>
-        <li><input type="radio" id="12" name="number" value="answer2" onclick="checkAnswer('2')">Yes, there will be two of us in the room.</li>
-        <li><input type="radio" id="13" name="number" value="answer3" onclick="checkAnswer('3')">Yes, there will be three or more of us in the room.</li>
-    </ol>
-
-    <p class="questions">Choose a color scheme.</p>
-    <ol class="quizflex">
-        <li><input type="radio" id="21" name="color" value="answer1" onclick="checkAnswer('1')"><img img class="colors" id="warmcolors" src="images/warm.png" alt="warm color scheme"></li>
-        <li><input type="radio" id="22" name="color" value="answer2" onclick="checkAnswer('2')"><img img class="colors" id="coolcolors" src="images/cool.png" alt="cool color scheme"></li>
-        <li><input type="radio" id="23" name="color" value="answer3" onclick="checkAnswer('3')"><img img class="colors" id="neutralcolors" src="images/neutral.png" alt="neutral color scheme"></li>
-        <li><input type="radio" id="24" name="color" value="answer4" onclick="checkAnswer('4')"><img img class="colors" id="brightcolors" src="images/bright.png" alt="colorful color scheme"></li>
-    </ol>
-
-    <p class="questions">Choose some bedding.</p>
-    <ol class="quizflex" id="bedding">
-        <li><input type="radio" id="31" name="bed" value="answer1" onclick="checkAnswer('1')"><img img id="fluffybedding" src="images/fluffybedding.jpg" alt="gray bedding with many pillows"></li>
-        <li><input type="radio" id="32" name="bed" value="answer2" onclick="checkAnswer('2')"><img img id="graybedding" src="images/luxebedding.jpg" alt="luxurious, white bedding"></li>
-        <li><input type="radio" id="33" name="bed" value="answer3" onclick="checkAnswer('3')"><img img id="patternedbedding" src="images/patternedbedding.jpg" alt="patterned bedding"></li>
-        <li><input type="radio" id="34" name="bed" value="answer4" onclick="checkAnswer('4')"><img img id="stripedbedding" src="images/bohemianbedding.jpg" alt="striped bedding"></li>
-    </ol>
-
-    <p class="questions">Choose a desk.</p>
-    <ol class="quizflex" id="desk">
-        <li><input type="radio" id="41" name="desk" value="answer1" onclick="checkAnswer('1')"><img img id="neatdesk" src="images/minimalistdesk.jpg" alt="neat, organized, white desk"></li>
-        <li><input type="radio" id="42" name="desk" value="answer2" onclick="checkAnswer('2')"><img img id="photodesk" src="images/workdesk.jpg" alt="desk with photos taped to the sides"></li>
-        <li><input type="radio" id="43" name="desk" value="answer3" onclick="checkAnswer('3')"><img img id="industrialdesk" src="images/personalizeddesk.jpg" alt="desk with large desktop computer and industrial light"></li>
-        <li><input type="radio" id="44" name="desk" value="answer4" onclick="checkAnswer('4')"><img img id="pinkdesk" src="images/prettydesk.jpg" alt="pinkdesk"></li>
-    </ol>
-
-    <p class="questions">Choose some wall decor.</p>
-    <ol class="quizflex" id="wall">
-        <li><input type="radio" id="51" name="wall" value="answer1" onclick="checkAnswer('1')"><img img id="mapdecor" src="images/mapdecor.jpg" alt="white wall with a world map, pictures, pennants, and lights hanging"></li>
-        <li><input type="radio" id="52" name="wall" value="answer2" onclick="checkAnswer('2')"><img img id="quotesdecor" src="images/quotesdecor.jpg" alt="white wall with a collage of quotes"></li>
-        <li><input type="radio" id="53" name="wall" value="answer3" onclick="checkAnswer('3')"><img img id="neutraldecor" src="images/neutraldecor.jpg" alt="white wall with a single travel poster"></li>
-        <li><input type="radio" id="54" name="wall" value="answer4" onclick="checkAnswer('4')"><img img id="minimalistdecor" src="images/minimalistwalldecor.jpg" alt="white wall with a single clock"></li>
-    </ol>
-
-    <p class="questions">Choose a vibe.</p>
-    <ol class="quizflex" id="vibe">
-        <li><input type="radio" id="61" name="style" value="answer1" onclick="checkAnswer('1')"><img img id="clean" src="images/cleanvibes.jpg" alt="a simple bedside table with clock"></li>
-        <li><input type="radio" id="62" name="style" value="answer2" onclick="checkAnswer('2')"><img img id="plants" src="images/plantvibes.jpg" alt="many plants surrounding a bookshelf"></li>
-        <li><input type="radio" id="63" name="style" value="answer3" onclick="checkAnswer('3')"><img img id="accentcolor" src="images/accentcolorvibes.jpg" alt="bright pink wall and black furniture"></li>
-        <li><input type="radio" id="64" name="style" value="answer4" onclick="checkAnswer('4')"><img img id="cozy" src="images/cozyvibes.jpg" alt="dimly lit bed with coffee and book"></li>
-    </ol>
-
-    <p class="questions">Choose a rug.</p>
-    <ol class="quizflex" id="rug">
-        <li><input type="radio" id="71" name="rug" value="answer1" onclick="checkAnswer('1')"><img img id="bluerug" src="images/warmrug.jpg" alt="a blue and tan woven rug"></li>
-        <li><input type="radio" id="72" name="rug" value="answer2" onclick="checkAnswer('2')"><img img id="whiterug" src="images/whiterug.jpg" alt="a fluffy white rug"></li>
-        <li><input type="radio" id="73" name="rug" value="answer3" onclick="checkAnswer('3')"><img img id="grayrug" src="images/grayrug.jpg" alt="light gray rug with white pattern"></li>
-        <li><input type="radio" id="74" name="rug" value="answer4" onclick="checkAnswer('4')"><img img id="patternrug" src="images/patternedrug.jpg" alt="black and white rug"></li>
-    </ol>
-
-    <p class="questions">How often do you plan to be in the room?</p>
-    <ol>
-        <li><input type="radio" id="81" name="time" value="answer1" onclick="checkAnswer('1')">As little as possible, honestly.</li>
-        <li><input type="radio" id="82" name="time" value="answer2" onclick="checkAnswer('2')">I'll be in the room sometimes, but I also want to get out somewhat.</li>
-        <li><input type="radio" id="83 name="time" value="answer3" onclick="checkAnswer('3')">Most of my free time will be spent in my dorm.</li>
-        <li><input type="radio" id="84" name="time" value="answer4" onclick="checkAnswer('4')">I'm only leaving to go to class.</li>
-    </ol>
-
-    <p class="questions">What's your budget range? (Not including essentials.)</p>
-    <ol>
-        <li><input type="radio" id="91" name="budget" value="answer1" onclick="checkAnswer('1')">0$ - 100$ </li>
-        <li><input type="radio" id="92" name="budget" value="answer2" onclick="checkAnswer('2')">100$ - 200$ </li>
-        <li><input type="radio" id="93" name="budget" value="answer3" onclick="checkAnswer('3')">200$+</li>
-        <li><input type="radio" id="94" name="budget" value="answer4" onclick="checkAnswer('4')">No budget. Just make it look good!</li>
-    </ol>
-
-    <p class="questions">Do you enjoy school spirit?</p>
-    <ol>
-        <li><input type="radio" id="101" name="spirit" value="answer1" onclick="checkAnswer('1')">I don't like it at all and don't want my dorm to reflect
-            where I'm going to college at all.</li>
-        <li><input type="radio" id="102" name="spirit" value="answer2" onclick="checkAnswer('2')">It's okay, but I don't want my dorm to look like a
-            sponsored room.</li>
-        <li><input type="radio" id="103" name="spirit" value="answer3" onclick="checkAnswer('3')">I like it and want a mix of school spirit and my personal
-            style reflected in my dorm room.</li>
-        <li><input type="radio" id="104" name="spirit" value="answer4" onclick="checkAnswer('4')">I love it and want to go all out.</li>
-    </ol>
-
-    <p class="questions">Select two of your college/favorite colors.</p>
-    <div class="colors">
-        <div id="firstcolor"><label>First Color: <input type="color" name="college" class="colorselector"></label> </div>
-        <div id="secondcolor"><label>Second Color: <input type="color" name="college" class="colorselector"></label></div>
-    </div>
+    </header>
+    <main>
+        <div id="theform">
 
 
-    <p><input type="submit"></p>
-    <!--<div id="submitbutton"><button class="submit">Submit!</button></div>-->
+            <p><label>Name: <input type="text" id="namebox" name="namebox" maxlength="50"></label></p>
+            <p class="questions">Are you living with a roommate?</p>
+            <ol>
+                <li><input type="radio" id="roommate1" name="number" value="answer1">No.</li>
+                <li><input type="radio" id="roommate2" name="number" value="answer2">Yes,
+                    there will be two of us in the room.</li>
+                <li><input type="radio" id="roommate3" name="number" value="answer3">Yes,
+                    there will be three or more of us in the room.</li>
+            </ol>
+            <p class="questions">Choose a color scheme.</p>
+            <ol class="quizflex">
+                <li><input type="radio" id="color1" name="color" value="answer1"><img img
+                        class="colors" id="warmcolors" src="images/warm.png" alt="warm color scheme"></li>
+                <li><input type="radio" id="color2" name="color" value="answer2"><img img
+                        class="colors" id="coolcolors" src="images/cool.png" alt="cool color scheme"></li>
+                <li><input type="radio" id="color3" name="color" value="answer3"><img img
+                        class="colors" id="neutralcolors" src="images/neutral.png" alt="neutral color scheme"></li>
+                <li><input type="radio" id="color4" name="color" value="answer4"><img img
+                        class="colors" id="brightcolors" src="images/bright.png" alt="colorful color scheme"></li>
+            </ol>
+            <p class="questions">Choose some bedding.</p>
+            <ol class="quizflex" id="bedding">
+                <li><input type="radio" id="bedding1" name="bed" value="answer1"><img img
+                        id="fluffybedding" src="images/fluffybedding.jpg" alt="gray bedding with many pillows"></li>
+                <li><input type="radio" id="bedding2" name="bed" value="answer2"><img img
+                        id="graybedding" src="images/luxebedding.jpg" alt="luxurious, white bedding"></li>
+                <li><input type="radio" id="bedding3" name="bed" value="answer3"><img img
+                        id="patternedbedding" src="images/patternedbedding.jpg" alt="patterned bedding"></li>
+                <li><input type="radio" id="bedding4" name="bed" value="answer4" onclick="checkAnswer('4')"><img img
+                        id="stripedbedding" src="images/bohemianbedding.jpg"></li>
+            </ol>
+
+            <p class="questions">Choose a desk.</p>
+            <ol class="quizflex" id="desk">
+                <li><input type="radio" id="desk1" name="desk" value="answer1"><img img
+                        id="neatdesk" src="images/minimalistdesk.jpg" alt="neat, organized, white desk"></li>
+                <li><input type="radio" id="desk2" name="desk" value="answer2"><img img
+                        id="photodesk" src="images/workdesk.jpg" alt="desk with photos taped to the sides"></li>
+                <li><input type="radio" id="desk3" name="desk" value="answer3"><img img
+                        id="industrialdesk" src="images/personalizeddesk.jpg"
+                        alt="desk with large desktop computer and industrial light"></li>
+                <li><input type="radio" id="desk4" name="desk" value="answer4"><img img
+                        id="pinkdesk" src="images/prettydesk.jpg" alt="pinkdesk"></li>
+            </ol>
+
+            <p class="questions">Choose some wall decor.</p>
+            <ol class="quizflex" id="wall">
+                <li><input type="radio" id="wall1" name="wall" value="answer1"><img img
+                        id="mapdecor" src="images/mapdecor.jpg"
+                        alt="white wall with a world map, pictures, pennants, and lights hanging"></li>
+                <li><input type="radio" id="wall2" name="wall" value="answer2"><img img
+                        id="quotesdecor" src="images/quotesdecor.jpg" alt="white wall with a collage of quotes"></li>
+                <li><input type="radio" id="wall3" name="wall" value="answer3"><img img
+                        id="neutraldecor" src="images/neutraldecor.jpg" alt="white wall with a single travel poster">
+                </li>
+                <li><input type="radio" id="wall4" name="wall" value="answer4"><img img
+                        id="minimalistdecor" src="images/minimalistwalldecor.jpg" alt="white wall with a single clock">
+                </li>
+            </ol>
+
+            <p class="questions">Choose a vibe.</p>
+            <ol class="quizflex" id="vibe">
+                <li><input type="radio" id="vibe1" name="style" value="answer1"><img img
+                        id="clean" src="images/cleanvibes.jpg" alt="a simple bedside table with clock"></li>
+                <li><input type="radio" id="vibe2" name="style" value="answer2"><img img
+                        id="plants" src="images/plantvibes.jpg" alt="many plants surrounding a bookshelf"></li>
+                <li><input type="radio" id="vibe3" name="style" value="answer3"><img img
+                        id="accentcolor" src="images/accentcolorvibes.jpg" alt="bright pink wall and black furniture">
+                </li>
+                <li><input type="radio" id="vibe4" name="style" value="answer4"><img img
+                        id="cozy" src="images/cozyvibes.jpg" alt="dimly lit bed with coffee and book"></li>
+            </ol>
+
+            <p class="questions">Choose a rug.</p>
+            <ol class="quizflex" id="rug">
+                <li><input type="radio" id="rug1" name="rug" value="answer1" onclick="checkAnswer('1')"><img img
+                        id="bluerug" src="images/warmrug.jpg" alt="a blue and tan woven rug"></li>
+                <li><input type="radio" id="rug2" name="rug" value="answer2" onclick="checkAnswer('2')"><img img
+                        id="whiterug" src="images/whiterug.jpg" alt="a fluffy white rug"></li>
+                <li><input type="radio" id="rug3" name="rug" value="answer3" onclick="checkAnswer('3')"><img img
+                        id="grayrug" src="images/grayrug.jpg" alt="light gray rug with white pattern"></li>
+                <li><input type="radio" id="rug4" name="rug" value="answer4" onclick="checkAnswer('4')"><img img
+                        id="patternrug" src="images/patternedrug.jpg" alt="black and white rug"></li>
+            </ol>
+
+            <p class="questions">How often do you plan to be in the room?</p>
+            <ol>
+                <li><input type="radio" id="time1" name="time" value="answer1" onclick="checkAnswer('1')">As little as
+                    possible, honestly.</li>
+                <li><input type="radio" id="time2" name="time" value="answer2" onclick="checkAnswer('2')">I'll be in the
+                    room sometimes, but I also want to get out somewhat.</li>
+                <li><input type="radio" id="time3 name=" time" value="answer3" onclick="checkAnswer('3')">Most of my free
+                    time will be spent in my dorm.</li>
+                <li><input type="radio" id="time4" name="time" value="answer4" onclick="checkAnswer('4')">I'm only leaving
+                    to go to class.</li>
+            </ol>
+
+            <p class="questions">What's your budget range? (Not including essentials.)</p>
+            <ol>
+                <li><input type="radio" id="budget1" name="budget" value="answer1" onclick="checkAnswer('1')">0$ - 100$ </li>
+                <li><input type="radio" id="budget2" name="budget" value="answer2" onclick="checkAnswer('2')">100$ - 200$
+                </li>
+                <li><input type="radio" id="budget3" name="budget" value="answer3" onclick="checkAnswer('3')">200$+</li>
+                <li><input type="radio" id="budget4" name="budget" value="answer4" onclick="checkAnswer('4')">No budget. Just
+                    make it look good!</li>
+            </ol>
+
+            <p class="questions">Do you enjoy school spirit?</p>
+            <ol>
+                <li><input type="radio" id="spirit1" name="spirit" value="answer1" onclick="checkAnswer('1')">I don't like
+                    it at all and don't want my dorm to reflect
+                    where I'm going to college at all.</li>
+                <li><input type="radio" id="spirit2" name="spirit" value="answer2" onclick="checkAnswer('2')">It's okay, but
+                    I don't want my dorm to look like a
+                    sponsored room.</li>
+                <li><input type="radio" id="spirit3" name="spirit" value="answer3" onclick="checkAnswer('3')">I like it and
+                    want a mix of school spirit and my personal
+                    style reflected in my dorm room.</li>
+                <li><input type="radio" id="spirit4" name="spirit" value="answer4" onclick="checkAnswer('4')">I love it and
+                    want to go all out.</li>
+            </ol>
+
+            <p class="questions">Select two of your college/favorite colors.</p>
+            <div class="colors">
+                <div id="firstcolor"><label>First Color: <input type="color" name="college"
+                            class="colorselector"></label> </div>
+                <div id="secondcolor"><label>Second Color: <input type="color" name="college"
+                            class="colorselector"></label></div>
+            </div>
+
+
+            <div id="submitbutton"><button id="thebutton" class="submit">Submit!</button></div>
+
+        </div>
     </main>
-</form>
+
+
+
+    <div id="results">
+
+        <div id="thename">
+        </div>
+        <div class="theresults" id="theintro">
+            Welcome to your results page! We’ve curated photos, must-buys, and budgeting tips personalized just for you! 
+            Feel free to read it through and let us know if you have any questions by reaching out to us on our Contact page.
+        </div>
+        <div class="theresults" id="room1">
+            <h2 class="category">Decoration Tip #1</h2>
+            Riding solo? Well don’t worry! We’ll help make your room your own
+            personal oasis—one where you can escape the everyday struggles of college, study, or simply relax. You’ve
+            got an advantage since you won’t have to worry about conflicts with a roommate. Keep in mind, however, that
+            while you may have more space and privacy, all of the furnishings and essentials will need to be bought by
+            you.
+        </div>
+        <div class="theresults" id="room2">
+            <h2 class="category">Decoration Tip #1</h2>
+            So, you’re rooming with another person? Maybe a close friend, an acquaintance or even a complete stranger. 
+            No matter your circumstances, however, you’ll be living with another person which will be quite the new experience. 
+            Communication is key here. Make sure to talk with your other roomie about what their interests are and how they plan to decorate their side.
+        </div>
+        <div class="theresults" id="room3">
+            <h2 class="category">Decoration Tip #1</h2>
+            People person? This is the room style that is the one for you! If you’ve chosen to live with multiple people, make sure that you have 
+            enough space and easily stored furniture to host game nights, movie nights, etc. With that many people, there’ll never 
+            be a dull moment! However, more people means more stuff, so make sure you coordinate and fund ample storage to keep everything organized and separated if necessary.
+        </div>
+
+        <div class="theresults" id="thecolor1">
+            <h2 class="category">Decoration Tip #2</h2>
+            You chose a warm color palette. Try finding some decor in red, yellow, or orange shades to bring a pop of 
+            color—for example, a white and orange bedding with some cute, yellow throw pillows.
+        </div>
+        <div class="theresults" id="thecolor2">
+            <h2 class="category">Decoration Tip #2</h2>
+            You chose a cool color palette. Try finding some decor in blue, green, or violet to bring in that feeling 
+            of cold, calm waters. For example, you could have blue bedding with some white throw pillows and a white throw blanket. 
+
+        </div>
+        <div class="theresults" id="thecolor3">
+            <h2 class="category">Decoration Tip #2</h2>
+            You chose a neutral color palette, meaning you like a minimal look. Black, white, gray, and brown are the colors you 
+            should opt for. Since most of your colors are neutral, you could add an accent color to have a pop of color.
+        </div>
+        <div class="theresults" id="thecolor4">
+            <h2 class="category">Decoration Tip #2</h2>
+            You chose a bright color palette. Try and find 2 to 3 colors that are cohesive and can work well together. 
+            Try not to go overboard with how many colors you choose because that could end up looking messy. We would also suggest choosing a neutral color like white, black, or gray to go with your color scheme.
+
+
+        </div>
+        
+        <div class="theresults" id="thebedding1">
+            <ul>
+                <li><input type="checkbox">Throw pillows</li>
+                <li><input type="checkbox">Extra blankets</li>
+            </ul>
+        </div>
+        <div class="theresults" id="thebedding2">
+            <ul>
+                <li><input type="checkbox">Gold/metallic decor</li>
+                <li><input type="checkbox">Wall mirror</li>
+                <li><input type="checkbox">Throw blankets</li>
+                <li><input type="checkbox">Decorative pillows</li>
+            </ul>
+        </div>
+        <div class="theresults" id="thebedding3">
+            <ul>
+                <li><input type="checkbox">A throw blanket</li>
+                <li><input type="checkbox">Extra pillows</li>
+                <li><input type="checkbox">Patterned bedspread</li>
+            </ul>
+        </div>
+        <div class="theresults" id="thebedding4">
+            <ul>
+                <li><input type="checkbox">Neutral bedding</li>
+                <li><input type="checkbox">Extra blanket</li>
+                <li><input type="checkbox">Natural decor</li>
+            </ul>
+        </div>
+        <div class="theresults" id="thedesk1">
+            <ul>
+                <li><input type="checkbox">Statement calendar</li>
+                <li><input type="checkbox">Desk organizers</li>
+                <li><input type="checkbox">Simple plants</li>
+                <li><input type="checkbox">Modern clock</li>
+            </ul>
+        </div>
+        <div class="theresults" id="thedesk2">
+            <ul>
+                <li><input type="checkbox">Personal knick knacks</li>
+                <li><input type="checkbox">Clock</li>
+                <li><input type="checkbox">Desk organizer</li>
+            </ul>
+        </div>
+        <div class="theresults" id="thedesk3">
+            <ul>
+                <li><input type="checkbox">Small succulents</li>
+                <li><input type="checkbox">Bright clock</li>
+                <li><input type="checkbox">Bulletin or dry erase boards</li>
+                <li><input type="checkbox">Desk organizers</li>
+            </ul>
+        </div>
+        <div class="theresults" id="thedesk4">
+            <ul>
+                <li><input type="checkbox">Coasters</li>
+                <li><input type="checkbox">Pastel desk organizers</li>
+                <li><input type="checkbox">Cute mugs</li>
+            </ul>
+        </div>
+        <div class="theresults" id="thewall1">
+            <ul>
+                <li><input type="checkbox">World map for dream destinations</li>
+                <li><input type="checkbox">Photos for a vibe wall</li>
+                <li><input type="checkbox">String lights</li>
+            </ul>
+        </div>
+        <div class="theresults" id="thewall2">
+            <ul>
+                <li><input type="checkbox">Inspirational quotes</li>
+                <li><input type="checkbox">Wall clock</li>
+                <li><input type="checkbox">DIY posters or pillows</li>
+                <li><input type="checkbox">Fake flowers</li>
+            </ul>
+        </div>
+        <div class="theresults" id="thewall3">
+            <ul>
+                <li><input type="checkbox">Photo string</li>
+                <li><input type="checkbox">Bulletin board</li>
+            </ul>
+        </div>
+        <div class="theresults" id="thewall4">
+            <ul>
+                <li><input type="checkbox">Modern wall clock</li>
+                <li><input type="checkbox">Desk lamp</li>
+                <li><input type="checkbox">Minimal posters</li>
+            </ul>
+
+        </div>
+        <div class="theresults" id="thevibe1">
+            <h2 class="category">Decoration Tip #3</h2>
+            Gotta go neutral with a few statement colors such as black, your school colors, or metallics 
+            like gold. Add some plants!!! Buy a vacuum!!!
+        </div>
+        <div class="theresults" id="thevibe2">
+            <h2 class="category">Decoration Tip #3</h2>
+            The boho vibe is definitely one of the cutest. Stock up on a few plants or succulents, or even 
+            buy a cute dreamcatcher! Some other options for decor would be some cute art pieces or a colorful tapestry.
+
+        </div>
+        <div class="theresults" id="thevibe3">
+            <h2 class="category">Decoration Tip #3</h2>
+            Choose one main color to make your room pop but keep the rest neutral, put up a bright tapestry that is a 
+            different color to create an accent wall since you can't paint your room. You could add some colorful decor or pictures to add an accent of color to the room.
+
+        </div>
+        <div class="theresults" id="thevibe4">
+            <h2 class="category">Decoration Tip #3</h2>
+            You definitely enjoy staying and reading a nice book or having a chill movie night with your friends/significant other. 
+            We would suggest buying some fairy lights to set the mood and a fluffy comforter/throw blanket.
+
+
+        </div>
+        <div class="theresults" id="therug1">
+            <h2 class="category">Decoration Tip #4</h2>
+            You definitely like patterns and pops of color, so we would suggest buying decor that makes your room stand out. 
+            You can even opt for a fun-colored rug with stripes or a chevron pattern.
+
+        </div>
+        <div class="theresults" id="therug2">
+            <h2 class="category">Decoration Tip #4</h2>
+            You like to stick with the basics, so we would suggest buying a lot of neutral decor and accessories including a 
+            white or cream rug to add a nice, clean touch to the room. You could even buy a fluffy one to make it extra fun!
+
+        </div>
+        <div class="theresults" id="therug3">
+            <h2 class="category">Decoration Tip #4</h2>
+            We noticed you enjoy some neutral and cool tones. We would suggest looking for some neutral decor to go along with your main accent color. 
+            You could consider buying a cool-toned rug as well could be a colorful, but not distracting touch to your room.
+
+        </div>
+        <div class="theresults" id="therug4">
+            <h2 class="category">Decoration Tip #4</h2>
+            We noticed that you like subtle patterns that add a bit of character to your room but aren’t too distracting. We would suggest buying a neutral toned rug, 
+            whether it be gray, black, or white, with a simple pattern on it such as chevron or floral. You could match these tones with your bedding as well to tie it all together.
+
+
+        </div>
+        <div class="theresults" id="thebudget1">
+            <h2 class="category">Decoration Tip #5</h2>
+            You’re definitely on a tight budget. Some stores we recommend are Goodwill, Walmart, and various thrift shops. 
+            It is easy to find cute decor and dorm pieces at these places for a low price!
+
+        </div>
+        <div class="theresults" id="thebudget2">
+            <h2 class="category">Decoration Tip #5</h2>
+            You’re on a flexible budget, but you definitely want to save money. Don’t worry we know college is expensive!. 
+            Some stores we recommend are Target and Bed, Bath, and Beyond. While they can be a bit pricey, they are realistic and have a great selection of dorm decor.
+
+        </div>
+        <div class="theresults" id="thebudget3">
+            <h2 class="category">Decoration Tip #5</h2>
+            You are on a pretty flexible budget and want to have a cute room for college. Some stores we would recommend are Costco, Wayfair, and HomeGoods. 
+            They are definitely on the more expensive side, but they have a wide selection for dorm decor and dorm essentials.
+
+        </div>
+        <div class="theresults" id="thebudget4">
+            <h2 class="category">Decoration Tip #5</h2>
+            You are excited to decorate your dorm and your room is obviously a priority. Some stores we would suggest are Urban Outfitters, 
+            Dormify, DormCo, and Roomify. Their prices lie on the more pricey side, but it is definitely worth it. They have some cozy options that fit everyone’s style!
+
+
+        </div>
+        <div class="theresults" id="thespirit1">
+            <h2 class="category">Decoration Tip #6</h2>
+            School colors aren't everyone’s favorite and we understand that! Stick to your vibe and your color palette when picking your decor.
+
+        </div>
+        <div class="theresults" id="thespirit2">
+            <h2 class="category">Decoration Tip #6</h2>
+            Maybe throw in a throw blanket or a few throw pillows that match your school’s colors. Another option could be adding a small banner or desk decor to add on your desk.
+        </div>
+        <div class="theresults" id="thespirit3">
+            <h2 class="category">Decoration Tip #6</h2>
+            School pride is definitely important to you, so maybe throw in a tapestry with your school colors or add some wall decor that reflects your school or your school colors!
+
+        </div>
+        <div class="theresults" id="thespirit4">
+            <h2 class="category">Decoration Tip #6</h2>
+            Since you love school pride and school spirit, this would be a chance to make your room’s theme based on your school colors. For example, if your school colors are blue and white, then have a blue and white bedspread, with some blue and white wall decor.
+
+
+        </div>
+
+        <div class="theresults" id="othernotes">
+            Other notes from the Creators:
+        </div>
+        <div class="theresults" id="if1">
+            You love color and are proud of your school! While you don’t have to overwhelm your room with school spirit, 
+            try to incorporate your school colors into some accent pieces to really highlight your pride.
+        </div>
+        <div class="theresults" id="if2">
+            Greenery is a great way to bring your own style into a room! Not only are they great decoration pieces, 
+            they help filter the air (which is always a good thing in an older, stuffy dorm building). 
+            See if you can find a small plant to put on your desk or windowsill, or if your room is big enough, get a standing plant to put in a corner and add some height to the room!
+        </div>
+        <div class="theresults" id="if3">
+        To keep things tidy and organized, avoid going too crazy with non-essentials. Especially if you spend less time 
+        in the room, there’s no need for clutter!
+        </div>  
+        <div class="theresults" id="if4">
+            Got wanderlust? Desk and wall decor are great ways to showcase the adventures you’ve taken (or want to take)! 
+            Use maps, pictures, and souvenirs to give your room a personalized feel, and it’ll give you a chance to tell people about where you’ve been.
+        </div>  
+        <div class="theresults" id="if5">
+            Since dorms are small, make organization your main focus. This can include labels, 
+            plastic drawers, and if you want to be trendy, a three-tier rolling cart. 
+        </div>  
+        <div class="theresults" id="if6">
+            For constant encouragement, print out some of your favorite quotes to hang as reminders. 
+            
+        </div>  
+        <div class="theresults" id="if7">
+            Staying in can be just as much fun as going out! Invest in a streaming service and some extra seating/pillows for cozy movie nights with your friends. 
+        </div>  
+        <div class="theresults" id="if8">
+            Even though dorms are small, you still might want to have people over sometimes! Look into some cool folding chairs 
+            (like a bungee chair) that can be easily stored behind bigger furniture. Then, pull them out an enjoy movie night!
+        </div>  
+        <div class="theresults" id="if9">
+            Even though dorms are small, you still might want to have people over sometimes! Look into some cool folding chairs 
+            (like a bungee chair) that can be easily stored behind bigger furniture. Then, pull them out an enjoy movie night!
+
+        </div>  
+        <div class="theresults" id="if10">
+            To keep things tidy and organized, avoid going too crazy with non-essentials. Especially if you spend less time 
+            in the room, there’s no need for clutter!
+        </div>  
+        <div class="theresults" id="if11">
+            To keep things tidy and organized, avoid going too crazy with non-essentials. Especially if you spend less time 
+            in the room, there’s no need for clutter!
+        </div>  
+    </div>
+
     <footer class="flexible2">
         <p>
             <strong>R.E.M. Sleep & Co</strong>

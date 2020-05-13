@@ -1,206 +1,231 @@
-/*answer choices numbered in 2 digits, first digit is question number, second digit is answer choice*/
-    /*question 1*/
-   namebox=document.getElementById("namebox")
-   firstquestion=document.getElementById("11")
-   function nameboxfunction() {
-       console.log(namebox.value);
-       document.write("<h1>");
-       document.write(namebox.value);
-       document.write("</h1>");
-       if (document.getElementById("11").checked=true) {
-        document.getElementById("disp").innerHTML = "radio button checked" ;
-       document.write("<h2>");
-       document.write("correct response");
-       document.write("</h2>");
-       }
-       if (document.getElementById("12").checked=true) {
-        document.write("<h2>");
-        document.write("other reponse");
-        document.write("</h2>");
-        }
-   } 
+namebox = document.getElementById("namebox");
+thename = document.getElementById("thename");
+theform = document.getElementById("theform");
+results = document.getElementById("results");
+theintro = document.getElementById("theintro");
 
-    const choice11 = document.getElementById("11");
-    const choice12 = document.getElementById("12");
-    const choice13 = document.getElementById("13");
 
-    function answer11() {
-        /*say to grab correct image result*/
-    }
-    function answer12() {
-        /*say to grab correct image result*/
-    }
-    function answer13() {
-        /*say to grab correct image result*/
-    }
+thebutton = document.getElementById("thebutton");
+room1 = document.getElementById("room1");
+room2 = document.getElementById("room2");
+room3 = document.getElementById("room3");
+thecolor1 = document.getElementById("thecolor1");
+thecolor2 = document.getElementById("thecolor2");
+thecolor3 = document.getElementById("thecolor3");
+thecolor4 = document.getElementById("thecolor4");
+thebedding1 = document.getElementById("thebedding1");
+thebedding2 = document.getElementById("thebedding2");
+thebedding3 = document.getElementById("thebedding3");
+thebedding4 = document.getElementById("thebedding4");
+thedesk1 = document.getElementById("thedesk1");
+thedesk2 = document.getElementById("thedesk2");
+thedesk3 = document.getElementById("thedesk3");
+thedesk4 = document.getElementById("thedesk4");
+thewall1 = document.getElementById("thewall1");
+thewall2 = document.getElementById("thewall2");
+thewall3 = document.getElementById("thewall3");
+thewall4 = document.getElementById("thewall4");
+thevibe1 = document.getElementById("thevibe1");
+thevibe2 = document.getElementById("thevibe2");
+thevibe3 = document.getElementById("thevibe3");
+thevibe4 = document.getElementById("thevibe4");
+therug1 = document.getElementById("therug1");
+therug2 = document.getElementById("therug2");
+therug3 = document.getElementById("therug3");
+therug4 = document.getElementById("therug4");
+thetime1 = document.getElementById("thetime1");
+thetime2 = document.getElementById("thetime2");
+thetime3 = document.getElementById("thetime3");
+thetime4 = document.getElementById("thetime4");
+thebudget1 = document.getElementById("thebudget1");
+thebudget2 = document.getElementById("thebudget2");
+thebudget3 = document.getElementById("thebudget3");
+thebudget4 = document.getElementById("thebudget4");
+thespirit1 = document.getElementById("thespirit1");
+thespirit2 = document.getElementById("thespirit2");
+thespirit3 = document.getElementById("thespirit3");
+thespirit4 = document.getElementById("thespirit4");
+if1 = document.getElementById("if1");
+if2 = document.getElementById("if2");
+if3 = document.getElementById("if3");
+if4 = document.getElementById("if4");
+if5 = document.getElementById("if5");
+if6 = document.getElementById("if6");
+if7 = document.getElementById("if7");
+if8 = document.getElementById("if8");
+if9 = document.getElementById("if9");
+if10 = document.getElementById("if10");
+if11 = document.getElementById("if11");
 
-    /*question 2*/
-    const choice21 = document.getElementById("21");
-    const choice22 = document.getElementById("22");
-    const choice23 = document.getElementById("23");
-    const choice24 = document.getElementById("24");
+thebutton.addEventListener("click", onButtonClick);
 
-    function answer21() {
-        /*say to grab correct image result*/
-    }
-    function answer22() {
-        /*say to grab correct image result*/
-    }
-    function answer23() {
-        /*say to grab correct image result*/
-    }
-    function answer24() {
-        /*say to grab correct image result*/
-    }
+function onButtonClick() {
+    theform.style.display = "none";
 
-    /*question 3*/
-    const choice31 = document.getElementById("31");
-    const choice32 = document.getElementById("32");
-    const choice33 = document.getElementById("33");
-    const choice34 = document.getElementById("34");
+    thename.innerHTML = "Hello, " + namebox.value;
+    theintro.style.display = "block";
 
-    function answer31() {
-        /*say to grab correct image result*/
+    if(document.getElementById("roommate1").checked) {
+        room1.style.display = "block";
     }
-    function answer32() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("roommate2").checked) {
+        room2.style.display = "block";
     }
-    function answer33() {
-        /*say to grab correct image result*/
-    }
-    function answer34() {
-        /*say to grab correct image result*/
-    }
-
-    /*question 4*/
-    const choice41 = document.getElementById("41");
-    const choice42 = document.getElementById("42");
-    const choice43 = document.getElementById("43");
-    const choice44 = document.getElementById("44");
-
-    function answer41() {
-        /*say to grab correct image result*/
-    }
-    function answer42() {
-        /*say to grab correct image result*/
-    }
-    function answer43() {
-        /*say to grab correct image result*/
-    }
-    function answer44() {
-        /*say to grab correct image result*/
+    else {
+        room3.style.display = "block";
     }
 
-    /*question 5*/
-    const choice51 = document.getElementById("51");
-    const choice52 = document.getElementById("52");
-    const choice53 = document.getElementById("53");
-    const choice54 = document.getElementById("54");
-
-    function answer51() {
-        /*say to grab correct image result*/
+    if(document.getElementById("color1").checked) {
+        thecolor1.style.display = "block";
     }
-    function answer52() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("color2").checked) {
+        thecolor2.style.display = "block";
     }
-    function answer53() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("color3").checked) {
+        thecolor3.style.display = "block";
     }
-    function answer54() {
-        /*say to grab correct image result*/
+    else {
+        thecolor4.style.display = "block";
     }
 
-    /*question 6*/
-    const choice61 = document.getElementById("61");
-    const choice62 = document.getElementById("62");
-    const choice63 = document.getElementById("63");
-    const choice64 = document.getElementById("64");
-
-    function answer61() {
-        /*say to grab correct image result*/
+    if(document.getElementById("bedding1").checked) {
+        thebedding1.style.display = "block";
     }
-    function answer62() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("bedding2").checked) {
+        thebedding2.style.display = "block";
     }
-    function answer63() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("bedding3").checked) {
+        thebedding3.style.display = "block";
     }
-    function answer64() {
-        /*say to grab correct image result*/
+    else {
+        thebedding4.style.display = "block";
     }
 
-    /*question 7*/
-    const choice71 = document.getElementById("71");
-    const choice72 = document.getElementById("72");
-    const choice73 = document.getElementById("73");
-    const choice74 = document.getElementById("74");
-
-    function answer71() {
-        /*say to grab correct image result*/
+    if(document.getElementById("desk1").checked) {
+        thedesk1.style.display = "block";
     }
-    function answer72() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("desk2").checked) {
+        thedesk2.style.display = "block";
     }
-    function answer73() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("desk3").checked) {
+        thedesk3.style.display = "block";
     }
-    function answer74() {
-        /*say to grab correct image result*/
+    else {
+        thedesk4.style.display = "block";
     }
-
-    /*question 8*/
-    const choice81 = document.getElementById("81");
-    const choice82 = document.getElementById("82");
-    const choice83 = document.getElementById("83");
-    const choice84 = document.getElementById("84");
-
-    function answer81() {
-        /*say to grab correct image result*/
+    
+    if(document.getElementById("wall1").checked) {
+        thewall1.style.display = "block";
     }
-    function answer82() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("wall2").checked) {
+        thewall2.style.display = "block";
     }
-    function answer83() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("wall3").checked) {
+        thewall3.style.display = "block";
     }
-    function answer84() {
-        /*say to grab correct image result*/
+    else {
+        thewall4.style.display = "block";
     }
-
-    /*question 9*/
-    const choice91 = document.getElementById("91");
-    const choice92 = document.getElementById("92");
-    const choice93 = document.getElementById("93");
-    const choice94 = document.getElementById("94");
-
-    function answer91() {
-        /*say to grab correct image result*/
+    
+    if(document.getElementById("vibe1").checked) {
+        thevibe1.style.display = "block";
     }
-    function answer92() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("vibe2").checked) {
+        thevibe2.style.display = "block";
     }
-    function answer93() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("vibe3").checked) {
+        thevibe3.style.display = "block";
     }
-    function answer94() {
-        /*say to grab correct image result*/
+    else {
+        thevibe4.style.display = "block";
     }
 
-    /*question 10*/
-    const choice101 = document.getElementById("101");
-    const choice102 = document.getElementById("102");
-    const choice103 = document.getElementById("103");
-    const choice104 = document.getElementById("104");
+    if(document.getElementById("rug1").checked) {
+        therug1.style.display = "block";
+    }
+    else if (document.getElementById("rug2").checked) {
+        therug2.style.display = "block";
+    }
+    else if (document.getElementById("rug3").checked) {
+        therug3.style.display = "block";
+    }
+    else {
+        therug4.style.display = "block";
+    }
 
-    function answer101() {
-        /*say to grab correct image result*/
+    if(document.getElementById("vibe1").checked) {
+        thevibe1.style.display = "block";
     }
-    function answer102() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("vibe2").checked) {
+        thevibe2.style.display = "block";
     }
-    function answer103() {
-        /*say to grab correct image result*/
+    else if (document.getElementById("vibe3").checked) {
+        thevibe3.style.display = "block";
     }
-    function answer104() {
-        /*say to grab correct image result*/
+    else {
+        thevibe4.style.display = "block";
     }
+
+    if(document.getElementById("budget1").checked) {
+        thebudget1.style.display = "block";
+    }
+    else if (document.getElementById("budget2").checked) {
+        thebudget2.style.display = "block";
+    }
+    else if (document.getElementById("budget3").checked) {
+        thebudget3.style.display = "block";
+    }
+    else {
+        thebudget4.style.display = "block";
+    }
+
+    if(document.getElementById("spirit1").checked) {
+        thespirit1.style.display = "block";
+    }
+    else if (document.getElementById("spirit2").checked) {
+        thespirit2.style.display = "block";
+    }
+    else if (document.getElementById("spirit3").checked) {
+        thespirit3.style.display = "block";
+    }
+    else {
+        thespirit4.style.display = "block";
+    }
+
+    othernotes.style.display = "block";
+    
+    if(document.getElementById("color4").checked && (document.getElementById("spirit3").checked || document.getElementById("spirit4").checked)) {
+        if1.style.display = "block";
+    }
+    if(document.getElementById("vibe2").checked && (document.getElementById("desk1").checked || document.getElementById("desk3").checked)) {
+        if2.style.display = "block";
+    }
+    if(document.getElementById("desk4").checked && document.getElementById("wall1").checked) {
+        if3.style.display = "block";
+    }
+    if((document.getElementById("bedding2").checked || document.getElementById("vibe1").checked) && (document.getElementById("wall3").checked || document.getElementById("wall4").checked)) {
+        if4.style.display = "block";
+    }
+    if(document.getElementById("desk1").checked && document.getElementById("vibe1").checked) {
+        if5.style.display = "block";
+    }
+    if(document.getElementById("wall2").checked && (document.getElementById("time3").checked || document.getElementById("time4").checked)) {
+        if6.style.display = "block";
+    }
+    if(document.getElementById("vibe4").checked && (document.getElementById("time2").checked || document.getElementById("time3").checked)) {
+        if7.style.display = "block";
+    }
+    if((document.getElementById("room2").checked || document.getElementById("room3").checked) && (document.getElementById("time2").checked || document.getElementById("time3").checked)) {
+        if8.style.display = "block";
+    }
+    if(document.getElementById("color2").checked && (document.getElementById("vibe4").checked || document.getElementById("desk2").checked)) {
+        if9.style.display = "block";
+    }
+    if((document.getElementById("room2").checked || document.getElementById("room3").checked) && (document.getElementById("time2").checked || document.getElementById("time3").checked)) {
+        if10.style.display = "block";
+    }
+    if((document.getElementById("room2").checked || document.getElementById("room3").checked) && (document.getElementById("time2").checked || document.getElementById("time3").checked)) {
+        if11.style.display = "block";
+    }
+}
+//&& document.getElementById("color1").checked)
