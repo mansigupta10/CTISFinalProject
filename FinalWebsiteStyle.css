@@ -160,7 +160,7 @@ p.questions {
 li {
     margin-right: 20px;
 }
-li#namebox {
+li#name {
     text-align: center;
     margin-top: 40px;
     list-style: none;
@@ -567,20 +567,6 @@ main.browse {
         width: 200px;
     }
 }
-@media (max-width: 1300px) {
-    div.smallfooter {
-    display: block;
-    }
-    div.logo, div.largefooter {
-    display: none;
-    }
-    div.homecontent{
-        float: none;
-        margin: 0px;
-        width: fit-content;
-        padding: 0px;
-    }
-}
 @media (min-height: 1300px) {
     footer.flexible2#shortscreen {
         position: absolute;
@@ -590,6 +576,23 @@ main.browse {
     }
 }
 
+@media (max-width: 1300px) {
+    div.smallfooter {
+        display: block;
+    }
+    div.logo, div.largefooter {
+        display: none;
+    }
+    div.homecontent{
+        float: none;
+        margin: 0px;
+        width: fit-content;
+        padding: 0px;
+    }
+    footer.flexible2#shortscreen {
+        position: static;
+    }
+}
 @media (max-width: 800px) {
     div.column {
         flex: 50%;
@@ -605,11 +608,35 @@ main.browse {
 }
 
 
+
 div.theresults {
     display: none;
+    margin: 0 15%;
+    text-align: center;
 }
-div.results {
-    margin: 0 10%;
+div#results {
     background: rgba(255, 255, 255, 0.863);
     border: 4px #DCD0C0 inset;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+}
+ul.resultschecklist {
+    list-style: none;
+    margin-bottom: -25px;
+}
+div.thename {
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+h2.category#tip {
+    margin-bottom: -40px;
+}
+h2.category#tipnumbers {
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+    border-top: 2px solid #FEDCD2;
+    padding-top: 15px;
 }

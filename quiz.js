@@ -4,7 +4,6 @@ theform = document.getElementById("theform");
 results = document.getElementById("results");
 theintro = document.getElementById("theintro");
 results = document.getElementById("results");
-
 thebutton = document.getElementById("thebutton");
 room1 = document.getElementById("room1");
 room2 = document.getElementById("room2");
@@ -64,6 +63,7 @@ function onButtonClick() {
     theform.style.display = "none";
     results.style.display = "block";
 
+    thename.style.display = "block";
     thename.innerHTML = "Hello, " + namebox.value;
     theintro.style.display = "block";
     
@@ -230,4 +230,3 @@ function onButtonClick() {
         if11.style.display = "block";
     }
 }
-//&& document.getElementById("color1").checked)
