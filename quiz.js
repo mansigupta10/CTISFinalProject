@@ -223,10 +223,10 @@ function onButtonClick() {
     if(document.getElementById("color2").checked && (document.getElementById("vibe4").checked || document.getElementById("desk2").checked)) {
         if9.style.display = "block";
     }
-    if((document.getElementById("room2").checked || document.getElementById("room3").checked) && (document.getElementById("time2").checked || document.getElementById("time3").checked)) {
+    if((document.getElementById("color1").checked || document.getElementById("bedding4").checked) && (document.getElementById("vibe2").checked || document.getElementById("rug1").checked)) {
         if10.style.display = "block";
     }
-    if((document.getElementById("room2").checked || document.getElementById("room3").checked) && (document.getElementById("time2").checked || document.getElementById("time3").checked)) {
+    if((document.getElementById("desk2").checked || document.getElementById("desk3").checked) && (document.getElementById("wall1").checked || document.getElementById("wall3").checked)) {
         if11.style.display = "block";
     }
 }

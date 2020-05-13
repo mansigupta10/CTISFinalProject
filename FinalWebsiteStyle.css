@@ -614,13 +614,16 @@ div#hoverinfo {
 div.theresults {
     display: none;
 }
-div.results {
-    margin: 0 10%;
+div#results {
+    margin: 0 15%;
     background: rgba(255, 255, 255, 0.863);
     border: 4px #DCD0C0 inset;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-bottom: 40px;
+    text-align: center;
+    padding: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 ul.resultschecklist {
     list-style: none;
