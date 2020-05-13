@@ -247,9 +247,6 @@ button#essentials {
     background-color: transparent;
     font-family: "Playfair Display", serif;
 }
-.dropdown:hover .essentialspages {
-    display: block;
-}
 
 button#essentials:hover, button#essentials:focus {
     background-color: rgba(255, 255, 255, 0.26);
@@ -280,13 +277,16 @@ div.essentialspages a {
     font-size: .35em;
     padding-top: 8px;
     padding-bottom: 8px;
-    margin: -30px 20px -30px 20px;
-    width: 300px;
+    margin: 0px 20px 0px 20px;
 }
 
 div.essentialspages a:hover{
     background-color: rgba(197, 182, 133);
 }
+
+/*.dropdown:hover .essentialspages {
+    display: block;
+}*/
 
 .show {
     display: flex;
