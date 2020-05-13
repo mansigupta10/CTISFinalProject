@@ -306,10 +306,6 @@ div.essentialspages a:hover{
     padding-bottom: 8px;
 }
 
-#dropDownMenu {
-    margin: -100px;
-}
-
 .show {
     display: flex;
 }
