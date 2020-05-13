@@ -578,6 +578,24 @@ div#hoverinfo {
     }
 }
 
+@media (max-width: 1300px) {
+    div.smallfooter {
+    display: block;
+    }
+    div.logo, div.largefooter {
+    display: none;
+    }
+    div.homecontent{
+        float: none;
+        margin: 0px;
+        width: fit-content;
+        padding: 0px;
+    }
+    footer.flexible2#shortscreen {
+        position: static;
+    }
+}
+
 @media (max-width: 800px) {
     div.column {
         flex: 50%;
